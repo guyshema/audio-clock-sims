@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Audio Clock Simulations – Index</title>
+  <style>
+    :root { --bg:#0f1226; --panel:#15193a; --text:#e9ecff; --muted:#b7c0ff; --accent:#68e0cf; --accent2:#84fab0; }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:var(--text); background: radial-gradient(1000px 600px at 20% -10%, #1d2250, transparent),
+                         radial-gradient(800px 500px at 110% 20%, #1a2c5b, transparent),
+                         var(--bg);
+      min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px;
+    }
+    .wrap { width:100%; max-width:980px; }
+    header { text-align:center; margin-bottom:24px; }
+    h1 { margin:.2rem 0 0; font-size:clamp(1.4rem, 2.6vw, 2.2rem); }
+    p.sub { color:var(--muted); margin:.4rem 0 0; }
+    .grid {
+      display:grid; gap:16px;
+      grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    }
+    .card {
+      background:linear-gradient(135deg, rgba(132,250,176,.12), rgba(104,224,207,.12));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:14px; padding:20px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 10px 24px rgba(0,0,0,.25);
+    }
+    h2 { margin:0 0 8px; font-size:1.05rem; }
+    .meta { font-size:.9rem; color:var(--muted); margin-bottom:12px; }
+    a.btn {
+      display:inline-block; text-decoration:none; color:#0b0f1a; font-weight:700;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      padding:10px 14px; border-radius:10px;
+      box-shadow: 0 6px 16px rgba(0,0,0,.25);
+    }
+    .tips { margin-top:22px; font-size:.92rem; color:var(--muted); }
+    code { background:rgba(255,255,255,.08); padding:.1rem .35rem; border-radius:6px; }
+    footer { text-align:center; margin-top:28px; color:var(--muted); font-size:.9rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Audio Clock Simulations</h1>
+      <p class="sub">Choose a version: with audio (local file) or visuals-only</p>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <h2>🎵 With Audio (Local File)</h2>
+        <div class="meta">Loads an audio file locally from the user's device. No upload.</div>
+        <a class="btn" href="./audio-clock-jitter-sim-english%20BEST(3).html">Open simulation</a>
+        <div class="tips">On iPhone/iPad tap <code>Play</code> after choosing a file (autoplay is blocked).</div>
+      </article>
+
+      <article class="card">
+        <h2>📊 Visuals Only (Mobile-friendly)</h2>
+        <div class="meta">Clock + waveform sampling demo without audio playback.</div>
+        <a class="btn" href="./audio-clock-jitter-sim-english%20NO%20AUDIO%20MOBILE.html">Open simulation</a>
+      </article>
+    </section>
+
+    <footer>© Oppenmasters · Static site – safe to host on GitHub Pages/Cloudflare Pages</footer>
+  </div>
+</body>
+</html>
